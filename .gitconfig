@@ -1,0 +1,56 @@
+[user]
+	name = Warren Smith
+	email = w3smith@uwaterloo.ca
+
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    dc = diff --cached
+    lg = log -p
+    l = log --graph --decorate --pretty=oneline --abbrev-commit
+    ll = log --pretty=format:'%h : %s' --graph --decorate
+    la = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ls = ls-files
+    rb = rebase
+    com = checkout master
+    rem = rebase master
+    now = diff HEAD
+    stache = stash
+    ss = stash
+    pom = push origin master
+    hom = push heroku master
+[color]
+    ui = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+    
+[apply]
+  ignorewhitespace = change
+	whitespace = nowarn
+[core]
+	ignorecase = false
+	excludesfile = /Users/Warren/.gitignore
+	filemode = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[mergetool]
+	keepBackup = true
+
