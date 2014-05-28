@@ -26,16 +26,13 @@ autocmd FileType python set tabstop=4
 autocmd FileType python set shiftwidth=4
 autocmd FileType python set textwidth=79
 
-" Java
-autocmd FileType python set tabstop=4
-autocmd FileType python set shiftwidth=4
-
 " Go
 autocmd FileType go set tabstop=4
 autocmd FileType go set shiftwidth=4
 
 " Java
 autocmd FileType java set textwidth=120
+autocmd FileType python set tabstop=4
 
 " C++
 autocmd FileType cpp set textwidth=120
