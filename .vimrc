@@ -6,6 +6,8 @@ set shiftwidth=2
 set shiftround
 set expandtab
 set incsearch
+set statusline+=%F
+set laststatus=2
 
 " Syntax highlighting for all languages
 syntax on
